@@ -40,20 +40,25 @@ class PyUdemy(object):
 	
 
 	def __str__(self):
+		''' Override of str function, be careful! '''
 		return f"{self.__class__.__name__}(clientID = {self.__clientID}, clientSecret = {self.__clientSecret})"
 
 	def __format__(self,r):
+		''' Override of format function, be careful! '''
 		return f"{self.__class__.__name__}(clientID = {self.__clientID}, clientSecret = {self.__clientSecret})"
 
 	def __repr__(self):
+		''' Override of repr function, be careful! '''
 		return f"{self.__class__.__name__}(clientID = {self.__clientID}, clientSecret = {self.__clientSecret})"
 
 	def __unicode__(self):
+		''' Override of unicode function, be careful! '''
 		return f"{self.__class__.__name__}(clientID = {self.__clientID}, clientSecret = {self.__clientSecret})"
 
 
 
 	def get_courseslist(self, **kwargs):
+		''' Returns the list of courses available on udemy, you may use keywords to filter! '''
 		allowedKwargs = ['page','page_size','search','category','subcategory','price','is_affiliate_agreed','is_fixed_priced_deals_agreed','is_percentage_deals_agreed','language','has_closed_caption','has_coding_exercises','has_simple_quiz','instructional_level','ordering','ratings','duration']
 		if len(kwargs) != 0:
 			for key in kwargs.keys():
@@ -89,6 +94,7 @@ class PyUdemy(object):
 			raise PyUdemyException(f"The status code was: {response.status_code}!")
 
 	def get_coursesreviewlist(self, courseID, **kwargs):
+		''' Returns the specified courses reviews, filters can be specified. '''
 		allowedKwargs = ['page','page','is_text_review','rating','user']
 		if len(kwargs) != 0:
 			for key in kwargs.keys():
@@ -113,6 +119,7 @@ class PyUdemy(object):
 			raise PyUdemyException(f"The status code was: {response.status_code}!")
 
 	def get_publiccurriculumlist(self,courseID, **kwargs):
+		''' Returns the public curriculum list of a specified curse, filtered by arguments. '''
 		allowedKwargs = ['page','page_size']
 		if len(kwargs) != 0:
 			for key in kwargs.keys():

@@ -6,10 +6,11 @@ def readme():
 
 setup(
 		name = 'udemy',
-		version = '0.0.2',		
+		version = '0.0.4',		
 		author = 'Szabó Dániel Ernő',
 		author_email = 'r3ap3rpy@gmail.com',
 		description = 'Python library for interacting with the udemy API 2.0!',
+		long_description = 'Python library for interacting with the udemy API 2.0!',
 		url="https://github.com/r3ap3rpy/udemy",
 		license = 'MIT',
 		packages = ['udemy'],
