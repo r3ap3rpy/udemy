@@ -10,7 +10,7 @@ setup(
 		author = 'Szabó Dániel Ernő',
 		author_email = 'r3ap3rpy@gmail.com',
 		description = 'Python library for interacting with the udemy API 2.0!',
-		url="https://github.com/pypa/sampleproject",
+		url="https://github.com/r3ap3rpy/udemy",
 		license = 'MIT',
 		packages = ['udemy'],
 		zip_safe = False,
