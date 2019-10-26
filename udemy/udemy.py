@@ -3,7 +3,7 @@ import os
 from requests.auth import HTTPBasicAuth
 
 class PyUdemyException(Exception):
-	''' Custom exception class for the module! '''
+	''' Custom exception class for the module!  '''
 	pass
 
 class PyUdemy(object):
