@@ -6,7 +6,7 @@ def readme():
 
 setup(
 		name = 'udemy',
-		version = '0.0.4',		
+		version = '0.0.5',		
 		author = 'Szabó Dániel Ernő',
 		author_email = 'r3ap3rpy@gmail.com',
 		description = 'Python library for interacting with the udemy API 2.0!',
